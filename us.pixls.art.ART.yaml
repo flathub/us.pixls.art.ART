@@ -378,12 +378,9 @@ modules:
       - -DCACHE_NAME_SUFFIX=""
       - -DCTL_INCLUDE_DIR=/app/include/CTL
 
-    post-install:
-      - install -Dm644 $FLATPAK_DEST/share/ART/metainfo/us.pixls.art.ART.metainfo.xml
-        -t $FLATPAK_DEST/share/metainfo/
     sources:
       - type: archive
-        url: https://github.com/artraweditor/ART/releases/download/1.25.12/ART-1.25.12.tar.xz
-        sha256: 49c7e7bd295601c28bb7ef353bc21ee830e3f794c112875d63351ce1f30fc7ba
+        url: https://github.com/artraweditor/ART/releases/download/1.26.1/ART-1.26.1.tar.xz
+        sha256: a389071c4d9e1159f122e3dbbd8faf9c40bd45c87f3c69c30d35ee0a1b1972dd
       - type: patch
         path: patches/art-appstream.patch
