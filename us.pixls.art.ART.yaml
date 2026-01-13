@@ -228,7 +228,7 @@ modules:
       - -DEXIV2_BUILD_SAMPLES=OFF
     sources:
       - type: archive
-        url: https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.7.tar.gz 
+        url: https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.7.tar.gz
         sha256: 5e292b02614dbc0cee40fe1116db2f42f63ef6b2ba430c77b614e17b8d61a638
   # OpenColorIO deps
   - name: pystring
@@ -299,8 +299,8 @@ modules:
       - -DOCIO_INSTALL_EXT_PACKAGES=NONE
     sources:
       - type: archive
-        url: https://github.com/imageworks/OpenColorIO/archive/v2.5.0.tar.gz
-        sha256: 124e2bfa8a9071959d6ddbb64ffbf78d3f6fe3c923ae23e96a6bbadde1af55b6
+        url: https://github.com/imageworks/OpenColorIO/archive/v2.5.1.tar.gz
+        sha256: 08cb6213ea4edee550ab050509d38204004bee6742c658166b1cf825d0a9381b
         x-checker-data:
           type: anitya
           project-id: 9631
@@ -349,13 +349,13 @@ modules:
       - name: perl
         no-autogen: true
         config-opts:
-          - '-des'
-          - '-Duseshrplib'
+          - -des
+          - -Duseshrplib
         build-options:
-          cflags: "-fPIC"
-          ldflags: "-fpic"
+          cflags: -fPIC
+          ldflags: -fpic
         cleanup:
-          - "*.h"
+          - '*.h'
         post-install:
           - find ${FLATPAK_DEST}/lib/perl5/ -name \*.so -exec chmod u+w {} \;
         sources:
