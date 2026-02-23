@@ -344,8 +344,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/exiftool/exiftool.git
-        tag: '13.44'
-        commit: aa4baf5c71d92e5dc9a077ee24fcc4fd478936c1
+        tag: '13.51'
+        commit: ff3e94fc4a06b04705cb5f9ccc15c26a0bd7047e
     modules:
       - name: perl
         no-autogen: true
