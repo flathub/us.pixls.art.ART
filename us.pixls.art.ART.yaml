@@ -335,6 +335,7 @@ modules:
       - type: git
         url: https://github.com/microsoft/mimalloc
         tag: v2.1.7
+        commit: 8c532c32c3c96e5ba1f2283e032f69ead8add00f
   - name: exiftool
     buildsystem: simple
     build-commands:
