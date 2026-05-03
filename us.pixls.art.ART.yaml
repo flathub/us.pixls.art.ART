@@ -384,7 +384,7 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/artraweditor/ART/releases/download/1.26.3/ART-1.26.3.tar.xz
-        sha256: db06f967b8373cf8d227a90ba46fc09f47e5e3cd45a3a382f1c6915271e7810c
+        url: https://github.com/artraweditor/ART/releases/download/1.26.4/ART-1.26.4.tar.xz
+        sha256: c88ec400787b23e2940629fd51dc2bb4d7b28062e38fc4d71f21ee65bee57991
       - type: patch
         path: patches/art-appstream.patch
