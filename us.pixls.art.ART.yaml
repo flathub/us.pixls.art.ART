@@ -381,10 +381,9 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DCACHE_NAME_SUFFIX=""
       - -DCTL_INCLUDE_DIR=/app/include/CTL
-
+    build-options:
+      cxxflags: -std=gnu++17 -Wno-template-id-cdtor
     sources:
       - type: archive
-        url: https://github.com/artraweditor/ART/releases/download/1.26.5/ART-1.26.5.tar.xz
-        sha256: bd63b36a18615937be55e7c5a854775cc15af16b27a105259b89315f7646bbf0
-      - type: patch
-        path: patches/art-appstream.patch
+        url: https://github.com/artraweditor/ART/releases/download/1.26.6/ART-1.26.6.tar.xz
+        sha256: 5cda92239b6a32a075d57f9fad96ed89c66c725f3ef44a63d3878c18890011cf
