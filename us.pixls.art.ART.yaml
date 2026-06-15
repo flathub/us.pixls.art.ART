@@ -191,7 +191,7 @@ modules:
       - type: git
         dest: lensfun-git
         url: https://github.com/lensfun/lensfun.git
-        commit: 268821c02495c0ffff8332417f0d59bdbefa545d
+        commit: 698a39eea69be00f4f25b6da6c1ad34b1f162b50
 
   - name: libiptcdata
     config-opts:
@@ -228,8 +228,8 @@ modules:
       - -DEXIV2_BUILD_SAMPLES=OFF
     sources:
       - type: archive
-        url: https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.7.tar.gz
-        sha256: 5e292b02614dbc0cee40fe1116db2f42f63ef6b2ba430c77b614e17b8d61a638
+        url: https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.8.tar.gz
+        sha256: ea51b0609f58a9afa063b60daa1539948b62247721e154f4fff0ad3aec9f9756
   # OpenColorIO deps
   - name: pystring
     buildsystem: cmake-ninja
@@ -318,8 +318,8 @@ modules:
       - /share/doc
     sources:
       - type: archive
-        url: https://www.libraw.org/data/LibRaw-0.21.4.tar.gz
-        sha256: 6be43f19397e43214ff56aab056bf3ff4925ca14012ce5a1538a172406a09e63
+        url: https://www.libraw.org/data/LibRaw-0.22.1.tar.gz
+        sha256: a789dc4e2409e2901d93793a4e0b80c7b49d0d97cf6ad71c850eb7616acfd786
       - type: shell
         commands:
           - autoreconf -vfi
