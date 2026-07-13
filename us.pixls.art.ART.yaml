@@ -385,5 +385,5 @@ modules:
       cxxflags: -std=gnu++17 -Wno-template-id-cdtor
     sources:
       - type: archive
-        url: https://github.com/artraweditor/ART/releases/download/1.26.6/ART-1.26.6.tar.xz
-        sha256: 5cda92239b6a32a075d57f9fad96ed89c66c725f3ef44a63d3878c18890011cf
+        url: https://github.com/artraweditor/ART/releases/download/1.26.7/ART-1.26.7.tar.xz
+        sha256: 297d31bfa7cd897e4802c3331baa293665c528dbe01db9575fb374b99e4d9343
