@@ -78,12 +78,12 @@ modules:
       - --buildtype=debugoptimized
       - --wrap-mode=nodownload
       - -Duse-network=false
+    cleanup:
+      - '*'
     sources:
       - type: archive
         url: https://ftp.gnome.org/pub/GNOME/sources/mm-common/1.0/mm-common-1.0.0.tar.xz
         sha256: b97d9b041e5952486cab620b44ab09f6013a478f43b6699ae899b8a4da189cd4
-    cleanup:
-      - '*'
 
   - name: libsigc++
     rm-configure: true
@@ -385,5 +385,7 @@ modules:
       cxxflags: -std=gnu++17 -Wno-template-id-cdtor
     sources:
       - type: archive
-        url: https://github.com/artraweditor/ART/releases/download/1.26.8/ART-1.26.8.tar.xz
-        sha256: c7a247063c4b68aba245376eaeb51386ab3db325971d8993210d5b774edaf368
+        url: https://github.com/artraweditor/ART/releases/download/1.26.9/ART-1.26.9.tar.xz
+        sha256: d49db4721b836cd45037053fa426839ec705276c93fe335c72b23ce3d32a57f6
+      - type: patch
+        path: patches/art-appstream.patch
