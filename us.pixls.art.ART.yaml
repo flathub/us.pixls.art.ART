@@ -299,8 +299,8 @@ modules:
       - -DOCIO_INSTALL_EXT_PACKAGES=NONE
     sources:
       - type: archive
-        url: https://github.com/imageworks/OpenColorIO/archive/v2.5.2.tar.gz
-        sha256: 722601e01b78b7a12da4829cb450674935f404b0e508f3f20046fa77570e3272
+        url: https://github.com/imageworks/OpenColorIO/archive/v2.6.0.tar.gz
+        sha256: 784ac37bde5b9c6e5dc15f23d1235bd1452d376cdc03627d6d6dd310f375a735
         x-checker-data:
           type: anitya
           project-id: 9631
