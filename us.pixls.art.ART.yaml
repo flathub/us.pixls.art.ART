@@ -387,7 +387,7 @@ modules:
       cxxflags: -std=gnu++17 -Wno-template-id-cdtor
     sources:
       - type: archive
-        url: https://github.com/artraweditor/ART/releases/download/1.26.9/ART-1.26.9.tar.xz
-        sha256: d49db4721b836cd45037053fa426839ec705276c93fe335c72b23ce3d32a57f6
+        url: https://github.com/artraweditor/ART/releases/download/1.26.10/ART-1.26.10.tar.xz
+        sha256: 8526905994cdd3d5f90c8fbc401188ee1426c1620f523e99c42a9245d403e58c
       - type: patch
-        path: patches/art-appstream.patch
+        path: patches/art-simd-fix.patch
