@@ -41,8 +41,8 @@ modules:
       - -DBUILD_TESTING=OFF
     sources:
       - type: archive
-        url: https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.2.1.tar.gz
-        sha256: b2c8a44c3e4695b74e9644c76f5f5480767355c6f98cde58ba0e82b4ad8c63ce
+        url: https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.2.3.tar.gz
+        sha256: e10c12b3f21f45bf08e09d4215d9c7691368d747beebd840de0b6fefed2df9f8
 
   - name: OpenEXR
     buildsystem: cmake-ninja
@@ -269,12 +269,13 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DBUILD_SHARED_LIBS=ON
+      - -DMZ_PPMD=OFF
     cleanup:
       - /bin
     sources:
       - type: archive
-        url: https://github.com/zlib-ng/minizip-ng/archive/refs/tags/4.0.10.tar.gz
-        sha256: c362e35ee973fa7be58cc5e38a4a6c23cc8f7e652555daf4f115a9eb2d3a6be7
+        url: https://github.com/zlib-ng/minizip-ng/archive/refs/tags/4.2.2.tar.gz
+        sha256: 71af7b9799856d8b03619df3949e9c1be9703f8de0795af71399ba283cb27aac
   - name: opencolorio
     buildsystem: cmake-ninja
     builddir: true
