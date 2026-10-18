@@ -373,7 +373,16 @@ modules:
             dest-filename: configure
             commands:
               - exec ./configure.gnu $@
-
+  - name: simde
+    buildsystem: meson
+    only-arches:
+      - aarch64
+    config-opts:
+      - -Dtests=false
+    sources:
+      - type: archive
+        url: https://github.com/simd-everywhere/simde/archive/refs/tags/v0.8.2.tar.gz
+        sha256: ed2a3268658f2f2a9b5367628a85ccd4cf9516460ed8604eed369653d49b25fb
   - name: art
     buildsystem: cmake-ninja
     builddir: true
@@ -384,6 +393,10 @@ modules:
       - -DCACHE_NAME_SUFFIX=""
       - -DCTL_INCLUDE_DIR=/app/include/CTL
     build-options:
+      arch:
+        aarch64:
+          config-opts:
+            - -DENABLE_SIMDE=ON
       cxxflags: -std=gnu++17 -Wno-template-id-cdtor
     sources:
       - type: archive
