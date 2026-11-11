@@ -400,7 +400,5 @@ modules:
       cxxflags: -std=gnu++17 -Wno-template-id-cdtor
     sources:
       - type: archive
-        url: https://github.com/artraweditor/ART/releases/download/1.26.10/ART-1.26.10.tar.xz
-        sha256: 8526905994cdd3d5f90c8fbc401188ee1426c1620f523e99c42a9245d403e58c
-      - type: patch
-        path: patches/art-simd-fix.patch
+        url: https://github.com/artraweditor/ART/releases/download/1.26.11/ART-1.26.11.tar.xz
+        sha256: da88b58f71215933d7940197f90a321d4dca1bf03d5d1ea256f0f8693e83acb3
